@@ -18,3 +18,22 @@ func (p PopulatedData) GenerateData(nama string) (idx int, biodata interface{}) 
 
 	return 0, nil
 }
+
+func DataPeserta() []model.Peserta {
+	pesertas := []model.Peserta{
+		{
+			Nama:      "Satrio",
+			Alamat:    "London",
+			Pekerjaan: "Dev",
+			Alasan:    "Mantap",
+		},
+		{
+			Nama:      "Mark",
+			Alamat:    "Berlin",
+			Pekerjaan: "QA",
+			Alasan:    "Rahasia",
+		},
+	}
+
+	return pesertas
+}
